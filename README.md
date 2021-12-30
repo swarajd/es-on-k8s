@@ -15,6 +15,12 @@ $ curl -O https://raw.githubusercontent.com/elastic/helm-charts/master/elasticse
 $ helm repo add elastic https://helm.elastic.co
 ```
 
+### Set up kubectl 
+```
+# Add the following to your ~/.bashrc
+alias kubectl="minikube kubectl --"
+```
+
 ## Running the cluster
 
 ### Setting up Minikube
