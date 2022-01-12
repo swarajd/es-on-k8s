@@ -39,3 +39,9 @@ $ helm install elasticsearch-multi-client elastic/elasticsearch -f ./client.yaml
 $ helm install kibana elastic/kibana
 $ helm install metricbeat elastic/metricbeat
 ```
+
+### Interact with the service
+```
+$ kubectl port-forward deployment/kibana-kibana 5601
+$ kubectl port-forward svc/elasticsearch-master 9200
+```
